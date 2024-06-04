@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Body background color */
+body {
+    background-color: hsl(229, 57%, 11%);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Parent container styling */
+.parent {
+    position: relative;
+}
+
+/* Background image section */
+.parent .div1 {
+    position: absolute;
+    width: 100%;
+}
+
+.img1 {
+    width: 100%;
+    padding-top: 324px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Logo and icons container */
+.parent .div2 {
+    position: absolute;
+    background-color: hsl(228, 56%, 26%);
+    width: 300px;
+    height: 170px;
+    margin-left: 350px;
+    margin-top: 250px;
+    border: solid none;
+    border-radius: 8px 100px 8px 8px;
+}
+
+/* Logo styling */
+.div2 .logo1 {
+    display: block;
+    padding: 20px 30px;
+}
+
+/* Icon container for document icon */
+.div2 .div3 {
+    position: absolute;
+    display: inline;
+    background-color: hsl(229, 57%, 11%);
+    width: 35px;
+    height: 35px;
+    margin: 10px 0px 0px 30px;
+    padding: 5px 0px 0px 8px;
+    border-radius: 8px;
+}
+
+/* Icon container for folder icon */
+.div2 .div4 {
+    position: absolute;
+    display: inline;
+    background-color: hsl(229, 57%, 11%);
+    width: 40px;
+    height: 35px;
+    margin: 10px 0px 0px 79px;
+    padding: 7px 0px 0px 8px;
+    border-radius: 8px;
+}
+
+/* Icon container for upload icon */
+.div2 .div5 {
+    position: absolute;
+    display: inline;
+    background-color: hsl(229, 57%, 11%);
+    width: 40px;
+    height: 35px;
+    margin: 10px 0px 0px 135px;
+    padding: 7px 0px 0px 8px;
+    border-radius: 8px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Storage usage container */
+.parent .div6 {
+    position: absolute;
+    background-color: hsl(228, 56%, 26%);
+    width: 550px;
+    height: 160px;
+    margin: 260px 0px 0px 700px;
+    border: solid none;
+    border-radius: 8px;
+}
+
+/* Storage bar background */
+.div6 .line {
+    background-color: hsl(229, 57%, 11%);
+    width: 450px;
+    height: 20px;
+    margin: 80px 0px 80px 50px;
+    border: solid;
+    border-radius: 9px;
+}
+
+/* Storage bar indicator */
+.div6 .line2 {
+    background-image: linear-gradient(102deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 352px;
+    height: 15px;
+    border: solid none;
+    border-radius: 9px;
+}
+
+/* Storage usage text */
+.div6 .text {
+    position: absolute;
+    color: hsl(229, 7%, 55%);
+    padding-top: 50px;
+    padding-left: 50px;
+    font: bold 14px "Raleway", sans-serif;
+}
+
+/* Highlighted storage usage number */
+.div6 .num1 {
+    color: hsl(243, 100%, 93%);
+}
+
+/* 0 GB marker */
+.div6 .num2 {
+    position: absolute;
+    color: hsl(243, 100%, 93%);
+    padding-left: 50px;
+    padding-top: 110px;
+    font: bold 14px "Raleway", sans-serif;
+}
+
+/* 1000 GB marker */
+.div6 .num3 {
+    position: absolute;
+    color: hsl(243, 100%, 93%);
+    padding-left: 440px;
+    padding-top: 110px;
+    font: bold 14px "Raleway", sans-serif;
+}
+
+/* Indicator circle on storage bar */
+.line2 .circle {
+    position: absolute;
+    background-color: hsl(243, 100%, 93%);
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    margin: 1px 0px 0px 338px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Remaining storage container */
+.parent .div7 {
+    position: absolute;
+    background-color: white;
+    width: 175px;
+    height: 80px;
+    border: solid;
+    border-radius: 8px;
+    margin: 210px 0px 0px 1030px;
+}
+
+/* Right triangle image */
+.parent .img2 {
+    position: absolute;
+    width: 31px;
+    height: 39px;
+    margin: 273px 0px 0px 1174px;
+}
+
+/* Remaining storage number */
+.div7 .num4 {
+    position: absolute;
+    padding: 10px 0px 0px 22px;
+    font: bold 40px "Raleway", sans-serif;
+}
+
+/* Remaining storage text */
+.parent .text2 {
+    position: absolute;
+    color: hsl(229, 7%, 55%);
+    padding: 240px 0px 0px 1130px;
+    font: bold 14px "Raleway", sans-serif;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Media Queries for responsive design */
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 1024px) {
+    .parent .div2 {
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+
+    .parent .div6 {
+        width: 450px;
+        margin: 200px 0px 0px 300px;
+    }
+
+    .div6 .line {
+        width: 400px;
+    }
+
+    .div6 .line2 {
+        width: 300px;
+    }
+
+    .parent .div7 {
+        margin: 210px 0px 0px 700px;
+    }
+
+    .parent .img2 {
+        margin: 273px 0px 0px 844px;
+    }
+
+    .parent .text2 {
+        padding: 240px 0px 0px 800px;
+    }
+}
+
+/* Small screens (mobile devices, 480px and up) */
+@media (max-width: 768px) {
+    .parent .div2 {
+        width: 200px;
+        height: 140px;
+        margin-left: 25px;
+        margin-top: 100px;
+    }
+
+    .div2 .logo1 {
+        padding: 10px 15px;
+    }
+
+    .div2 .div3, .div2 .div4, .div2 .div5 {
+        width: 30px;
+        height: 30px;
+        margin: 5px 0px 0px 15px;
+        padding: 5px 0px 0px 5px;
+    }
+
+    .parent .div6 {
+        width: 300px;
+        height: 140px;
+        margin: 160px 0px 0px 25px;
+    }
+
+    .div6 .line {
+        width: 250px;
+    }
+
+    .div6 .line2 {
+        width: 200px;
+    }
+
+    .div6 .text {
+        padding-top: 30px;
+        padding-left: 25px;
+    }
+
+    .div6 .num2, .div6 .num3 {
+        padding-top: 90px;
+        font-size: 12px;
+    }
+
+    .parent .div7 {
+        width: 150px;
+        height: 60px;
+        margin: 180px 0px 0px 25px;
+    }
+
+    .div7 .num4 {
+        padding: 5px 0px 0px 10px;
+        font-size: 30px;
+    }
+
+    .parent .img2 {
+        margin: 220px 0px 0px 150px;
+    }
+
+    .parent .text2 {
+        padding: 190px 0px 0px 180px;
+        font-size: 12px;
+    }
+}
+
+/* Extra small screens (mobile devices, 320px and up) */
+@media (max-width: 480px) {
+    .parent .div2 {
+        width: 180px;
+        height: 120px;
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+
+    .div2 .logo1 {
+        padding: 5px 10px;
+    }
+
+    .div2 .div3, .div2 .div4, .div2 .div5 {
+        width: 25px;
+        height: 25px;
+        margin: 3px 0px 0px 10px;
+        padding: 3px 0px 0px 3px;
+    }
+
+    .parent .div6 {
+        width: 250px;
+        height: 120px;
+        margin: 130px 0px 0px 10px;
+    }
+
+    .div6 .line {
+        width: 200px;
+    }
+
+    .div6 .line2 {
+        width: 150px;
+    }
+
+    .div6 .text {
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+
+    .div6 .num2, .div6 .num3 {
+        padding-top: 70px;
+        font-size: 10px;
+    }
+
+    .parent .div7 {
+        width: 120px;
+        height: 50px;
+        margin: 150px 0px 0px 10px;
+    }
+
+    .div7 .num4 {
+        padding: 3px 0px 0px 8px;
+        font-size: 25px;
+    }
+
+    .parent .img2 {
+        margin: 180px 0px 0px 110px;
+    }
+
+    .parent .text2 {
+        padding: 150px 0px 0px 130px;
+        font-size: 10px;
+    }
+}
